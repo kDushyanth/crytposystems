@@ -14,5 +14,5 @@ RSA and ElGamal implementation using [Charm-Crypto](https://jhuisi.github.io/cha
 2.   {(p, α, a, ß): α<sup>a</sup> ≅ ß (mod p)}
 3.   Public Key: (p, α, ß) and Private Key: a
 4.   Encryption for message `m`: Select random number r ∈ Z<sub>p-1</sub><sup>\*</sup>  
-       c = E<sub>k</sub>(m) = (y1,y2) where y1 = α<sup>r</sup> (mod p) and y2 = m. ß<sup>r</sup>(mod p)
-5.   Decryption for cipher `c`: D<sub>k</sub>(c) = y2.(y1<sup>a</sup>)<sup>-1</sup>
+       c = E<sub>k</sub>(m) = (y<sub>1</sub>,y<sub>2</sub>) where y<sub>1</sub> = α<sup>r</sup> (mod p) and y<sub>2</sub> = m. ß<sup>r</sup>(mod p)
+5.   Decryption for cipher `c`: D<sub>k</sub>(c) = y<sub>2</sub>.(y<sub>1</sub><sup>a</sup>)<sup>-1</sup>
